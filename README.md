@@ -15,8 +15,8 @@ This is a simple machine learning web application built with Flask that predicts
 ## 🚀 Getting Started
 
 ### Clone the Repository
-git clone https://github.com/fortunemaviya/<your-repo-name>.git
-cd <your-repo-name>
+git clone https://github.com/fortunemaviya/titanic_model.git
+cd titanic_model
 
 
 ### Create a Virtual Environment (Optional but recommended)
@@ -33,16 +33,12 @@ Visit `http://127.0.0.1:5000/` in your browser to test the app.
 
 ## 🧠 Model Info
 
-The model is trained on the [Kaggle Titanic dataset](https://www.kaggle.com/competitions/titanic) using features such as:
+A logistic regression model trained on the Titanic passenger dataset (the [Kaggle Titanic](https://www.kaggle.com/competitions/titanic) data, loaded from a public mirror in `train_model.py`) using two features:
 
-* Passenger class
-* Age
 * Sex
-* Fare
-* Embarked location
-* Number of siblings/spouses or parents/children aboard
+* Fare paid
 
-You can retrain the model using the `train_model.py` script.
+It is deliberately simple so the web app stays easy to follow; passenger class, age and family size are natural next features to add. You can retrain the model with `python train_model.py`.
 
 ## ☁️ Deployment
 
